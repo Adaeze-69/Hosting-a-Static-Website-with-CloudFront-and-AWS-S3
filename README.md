@@ -47,4 +47,16 @@ iv. Leave every other thing as default and scroll down and click **create bucket
 
 ![create bucket](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/8072c6f8-fb78-41b1-8ab7-ef9c824d61f9)
 
-### S
+### Step 2: Upload Website files to S3 Bucket
+
+i. Click on the bucket name so you can upload your website files into the bucket.
+
+![my wedding invitation](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/a78a6759-43ed-4549-97f3-ee53da2b29c6)
+
+ii. Click on **upload** and select the files from your local file storage. Do well not to upload the overall folder carrying the other folders. Upload the folders one after the other so it opens on your browser along the line.
+
+![upload](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/5753c604-1914-4e47-91a5-5e219b0bda3d)
+
+iii. Click on **upload folders** and upload your folders from there. You can upload a file if that is what you have.
+
+![upload folders](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/83eceb19-8b4c-47f2-81ad-a21a7e645ea2)
