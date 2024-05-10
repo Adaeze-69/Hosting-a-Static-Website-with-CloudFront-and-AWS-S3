@@ -125,3 +125,14 @@ v. When you open it if you everything right, you should see the static website h
 
 ![wedding invite](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/ace028dc-8d5c-42c7-9cbd-3b42fd72de57)
 
+### Step 5 - Create a CloudFront Distribution
+
+i.Search for **Cloudfront** in your AWS console and click on it.
+
+![cloudfront](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/014b8f20-4a98-4a2b-b6f5-672ee978d5c0)
+
+ii. Click on **Create a CloudFront distribution** and populate it.
+
+![CloudFront distribution](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/52c1afae-76b2-4f81-86d0-d8ab8ae9bcc5)
+
+iii. 
