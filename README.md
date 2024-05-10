@@ -127,7 +127,7 @@ https://www.loom.com/share/752de16b21684e0aa3d04fbcbfa3a5d4?sid=3dacffd6-399b-48
 
 ![wedding invite](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/ace028dc-8d5c-42c7-9cbd-3b42fd72de57)
 
-### Step 5 - Create a CloudFront Distribution
+### Step 5 - Create a CloudFront Distribution to make your AWS S3 bucket private
 
 i.Search for **Cloudfront** in your AWS console and click on it.
 
@@ -161,7 +161,30 @@ vii. Click on **create policy** and click on the circled url to paste the policy
 
 ![create policy](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/c953f8b3-aeb3-494d-b05a-9d4ff89b004d)
 
-viii. Navigate to **permissions** under your bucket and scroll to **bucket policy** and click **edit**. Paste the copied policy in here. Scroll down and click on **save changes**
+viii. Navigate to **permissions** under your bucket and scroll to **bucket policy** and click **edit**. Delete the policy you pasted before which you used to see if your bucket was publicy accessible before we used cloudfront to make it private.Paste the copied policy in here. Scroll down and click on **save changes**. The policy can be found below also.
+
+```
+{
+        "Version": "2008-10-17",
+        "Id": "PolicyForCloudFrontPrivateContent",
+        "Statement": [
+            {
+                "Sid": "AllowCloudFrontServicePrincipal",
+                "Effect": "Allow",
+                "Principal": {
+                    "Service": "cloudfront.amazonaws.com"
+                },
+                "Action": "s3:GetObject",
+                "Resource": "arn:aws:s3:::my-wedding-invitation/*",
+                "Condition": {
+                    "StringEquals": {
+                      "AWS:SourceArn": "arn:aws:cloudfront::154334184944:distribution/E22OCAT2YCY14Z"
+                    }
+                }
+            }
+        ]
+      }
+```
 
 ![image](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/dbd33f6c-a2c1-44ba-bd05-901f6f075047)
 
