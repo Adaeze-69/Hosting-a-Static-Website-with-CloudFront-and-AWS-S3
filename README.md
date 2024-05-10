@@ -60,3 +60,30 @@ ii. Click on **upload** and select the files from your local file storage. Do we
 iii. Click on **upload folders** and upload your folders from there. You can upload a file if that is what you have.
 
 ![upload folders](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/83eceb19-8b4c-47f2-81ad-a21a7e645ea2)
+
+iv. After uploading the folders from your local file storage, click on **Upload**.
+
+![upload](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/dcd58e92-6c6c-4ada-98a4-8663e63da07a)
+
+v. Give it some time to populate and upload. You will eventually see a small green banner after a while to indicate that it was successful.
+
+![populatw](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/a3072693-a99b-46e5-a753-18a312f41fa9)
+![successful](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/fdf2c8cf-2a2d-4a1e-8f0a-ff95498cc8d1)
+
+### Step 3:Enable Static Website Hosting on S3 Bucket Created
+
+i. Click on the **close** button and see all your files or folders. Click on the **Properties** tabs and scroll down to **Static website hosting**
+
+![Static website hosting](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/71fb0efe-4f2c-41e4-b71d-7ff721af1830)
+
+ii. Click on **Edit** on **Static website hosting**
+
+![image](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/fd3f19e7-a597-4112-bc00-5384b67c1350)
+
+iii. Click on the radio button **Enable**. Under **hosting type**, click on **Host a static website**. Under **Index document**, type *index.html* in it.
+
+![Static website hosting](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/c47d1f79-a154-4026-80b8-652d2b86d751)
+
+iv. Leave every other thing as default and scroll down and click on **save changes**
+
+![save changes](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/e739ef18-4c73-486d-85e6-df316bc4f338)
