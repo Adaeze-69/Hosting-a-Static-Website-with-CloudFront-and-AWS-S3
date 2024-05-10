@@ -123,6 +123,8 @@ iv. Click on the **Properties** tabs and scroll down to **Static website hosting
 
 v. When you open it if you everything right, you should see the static website here. This is what mine looks like.
 
+https://www.loom.com/share/752de16b21684e0aa3d04fbcbfa3a5d4?sid=3dacffd6-399b-4813-a268-e8d52a8bb145
+
 ![wedding invite](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/ace028dc-8d5c-42c7-9cbd-3b42fd72de57)
 
 ### Step 5 - Create a CloudFront Distribution
@@ -135,7 +137,38 @@ ii. Click on **Create a CloudFront distribution** and populate it.
 
 ![CloudFront distribution](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/52c1afae-76b2-4f81-86d0-d8ab8ae9bcc5)
 
+iii. There is no existing Origin Access Control (OAC) so we need to create one. Click on **Create new OAC**
+
+![Origin Access Control (OAC)](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/9c1b4c3e-5f61-4631-8dd0-cd3670131c63)
+
+
 iii. Under **Origin domain**, input the url you used in opening the your website which is found in your created  S3 bucket under **Properties** >> **Static website hosting**. If you see the **use website endpoint** in yours, do not click on it. If you do,you will not see the **Origin access control settings** which you need to set to make your bucket private.
 
 ![Origin domain](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/6c543aa3-47b0-4fbc-a8b9-87f198ffd494)
 
+iv. You should get a page like this. Leave everything as default especially the **origin type** as S3. Then click **create**
+
+![s3](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/1049aa08-440f-461d-900f-1e5b0cec5259)
+
+v. Under **Web Application Firewall (WAF)**, click on the radio button **Do not enable security protections**. We just want to keep it simple.
+
+![image](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/cf075dc4-168d-4294-9016-f5911d7be1e6)
+
+vi Leave everything as default and click **create distribution**
+![create distribution](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/ebce8f5f-f104-4c06-9f5d-4778b737007f)
+
+vii. Click on **create policy** and click on the circled url to paste the policy.
+
+![create policy](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/c953f8b3-aeb3-494d-b05a-9d4ff89b004d)
+
+viii. Navigate to **permissions** under your bucket and scroll to **bucket policy** and click **edit**. Paste the copied policy in here. Scroll down and click on **save changes**
+
+![image](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/dbd33f6c-a2c1-44ba-bd05-901f6f075047)
+
+ix. Navigate back to your cloudfront tab and copy the **Distribution domain name**. Paste it on your browser and add /index.html to it. i.e https://d3fvr8swd8au27.cloudfront.net/index.html Make sure to use your own **Distribution domain name**.
+
+![Distribution domain name](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/aec88bdb-eb61-4507-b376-e522dbc842b7)
+
+x. It would bring out your website page for you just like mine.
+
+![website](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/a694df26-16a8-451c-a3f7-48e7ae4b83f1)
