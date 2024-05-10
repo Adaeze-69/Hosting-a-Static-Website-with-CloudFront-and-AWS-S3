@@ -135,4 +135,7 @@ ii. Click on **Create a CloudFront distribution** and populate it.
 
 ![CloudFront distribution](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/52c1afae-76b2-4f81-86d0-d8ab8ae9bcc5)
 
-iii. 
+iii. Under **Origin domain**, input the url you used in opening the your website which is found in your created  S3 bucket under **Properties** >> **Static website hosting**. If you see the **use website endpoint** in yours, do not click on it. If you do,you will not see the **Origin access control settings** which you need to set to make your bucket private.
+
+![Origin domain](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/6c543aa3-47b0-4fbc-a8b9-87f198ffd494)
+
