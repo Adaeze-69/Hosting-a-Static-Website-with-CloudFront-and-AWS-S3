@@ -1,5 +1,10 @@
 # Hosting-a-Static-Website-with-CloudFront-and-AWS-S3
 
+https://d3fvr8swd8au27.cloudfront.net/index.html
+
+![Hosting-a-Static-Website-with-CloudFront-and-AWS-S3](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/5e62e28b-14db-48c7-888e-725ce3d9bf0e)
+
+
 ## Overview
 Create a static website on Amazon S3 bucket(private bucket) but with public read policy assigned, using cloud front for Content Delivery Network.
 
