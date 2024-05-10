@@ -195,3 +195,12 @@ ix. Navigate back to your cloudfront tab and copy the **Distribution domain name
 x. It would bring out your website page for you just like mine.
 
 ![website](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/a694df26-16a8-451c-a3f7-48e7ae4b83f1)
+
+
+## Conclusion
+
+Based on the steps we have taking to achieve this, it can be implied that the tutorial describes how to set up a private static website with Amazon S3 and CloudFront. Enabling static website hosting with a public read policy and setting up an S3 bucket to store website files are among the procedures. For global access, fast transfer rates and minimal latency are therefore guaranteed by creating a CloudFront distribution for content delivery.
+
+For the CloudFront distribution to control access to the S3 bucket, establishing an Origin Access Control (OAC) is an essential step in the procedure. To further make the S3 bucket private, the guide outlines how to remove the existing public read policy and change the bucket policy to limit access to only the CloudFront service.
+
+The documentation concludes by showing you how to use CloudFront to enhance the security and performance of your static website hosted on S3, all the while keeping it private and only available via the CloudFront distribution.
