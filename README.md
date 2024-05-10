@@ -87,3 +87,32 @@ iii. Click on the radio button **Enable**. Under **hosting type**, click on **Ho
 iv. Leave every other thing as default and scroll down and click on **save changes**
 
 ![save changes](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/e739ef18-4c73-486d-85e6-df316bc4f338)
+
+### Step 4 - Attach a Bucket Policy
+
+i. Click on **Permissions** tab and scroll down to **Bucket policy**
+
+![image](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/638dddb4-1ee1-426b-bad2-6002a868b699)
+
+ii. Click on **Edit** under **Bucket policy** to input your bucket poilicy to allow access the website on the S3 bucket.
+
+![Bucket policy](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/d75c5092-6d0c-45a7-860e-86d1df4c6383)
+
+iii. Attach the policy below and replace *bucket name* with your bucket name. Scroll down and click on **save changes**.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::<bucket name>/*"
+        }
+    ]
+}
+```
+
+![policy](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/c4ef00f0-4d65-4b83-b34d-32fbba9d8e21)
