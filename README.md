@@ -116,3 +116,12 @@ iii. Attach the policy below and replace *bucket name* with your bucket name. Sc
 ```
 
 ![policy](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/c4ef00f0-4d65-4b83-b34d-32fbba9d8e21)
+
+iv. Click on the **Properties** tabs and scroll down to **Static website hosting** and copy  the link there to open on your browser.
+
+![image](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/e282912a-17af-4320-9d87-e1873e05bfb8)
+
+v. When you open it if you everything right, you should see the static website here. This is what mine looks like.
+
+![wedding invite](https://github.com/Adaeze-69/Hosting-a-Static-Website-with-CloudFront-and-AWS-S3/assets/66219475/ace028dc-8d5c-42c7-9cbd-3b42fd72de57)
+
